@@ -1,0 +1,70 @@
+html, body {
+    height: auto;
+}
+
+header {
+    position: sticky;
+    top: var(--margin);
+}
+
+main {
+    margin-bottom: calc(0.5 * var(--margin));
+}
+
+ul {
+    display: grid;
+    gap: calc(3 * var(--margin)); */
+    /* margin-bottom: calc(3 * var(--margin));  */
+}
+
+li img {
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    object-position: left;
+}
+
+li:nth-of-type(2) img {
+    object-position: right;
+}
+
+li p {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    bottom: var(--margin);
+} 
+
+
+
+/* WERSJA 1 */
+/*
+body {
+    grid-template-rows: calc(50% - 4 * var(--margin));
+}
+
+ul {
+    display: grid;
+    gap: var(--margin);
+}
+
+li {
+    display: grid;
+    align-items: end;
+    height: 50vh;
+    margin-bottom: 20vh;
+}
+
+li img {
+    max-height: calc(50vh - 2 * (var(--margin)));
+    margin-bottom: calc(0.5 * var(--margin));
+}
+
+li:last-child {
+    margin-bottom: calc(3 * var(--margin));
+}
+
+nav {
+    position: fixed;
+} */
