@@ -7,20 +7,16 @@ header {
     top: var(--margin);
 }
 
-main {
-    margin-bottom: calc(0.5 * var(--margin));
-}
-
-ul {
-    display: grid;
-    gap: calc(3 * var(--margin)); */
-    /* margin-bottom: calc(3 * var(--margin));  */
+.gallery-container {
+    overflow: hidden;
 }
 
 li img {
-    aspect-ratio: 1/1;
+    height: calc(100vw - 2 * var(--margin));
+    width: 100vw;
     object-fit: contain;
     object-position: left;
+    padding: var(--margin) 0 var(--margin) 0;
 }
 
 li:nth-of-type(2) img {
@@ -35,36 +31,3 @@ nav {
     position: fixed;
     bottom: var(--margin);
 } 
-
-
-
-/* WERSJA 1 */
-/*
-body {
-    grid-template-rows: calc(50% - 4 * var(--margin));
-}
-
-ul {
-    display: grid;
-    gap: var(--margin);
-}
-
-li {
-    display: grid;
-    align-items: end;
-    height: 50vh;
-    margin-bottom: 20vh;
-}
-
-li img {
-    max-height: calc(50vh - 2 * (var(--margin)));
-    margin-bottom: calc(0.5 * var(--margin));
-}
-
-li:last-child {
-    margin-bottom: calc(3 * var(--margin));
-}
-
-nav {
-    position: fixed;
-} */
