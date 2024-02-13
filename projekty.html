@@ -11,31 +11,44 @@
     <meta name="copyright" content="Kuba Krysiak">
 </head>
 <body>
-    <header><a href="index.html"><img class=logo src="images/logo-kk-12pt.svg" alt="Kuba Krysiak Autorska Pracownia Projektowa"></a></header>
-    <main><ul class="gallery-container">
-        <li>
-            <img class="project1" src="projects/W-01-4.gif">
-            <img class="project1" src="projects/W-01-1m.jpg">
-            <img class="project1" src="projects/W-01-2m.jpg">
-            <img class="project1" src="projects/W-01-3m.jpg">
-            <img class="project1" src="projects/W-01-5m.jpg">
-            <img class="project1" src="projects/W-01-6m.jpg">
-            <p>Aranżacja mieszkania we Wrocławiu</p>
-        </li>
-        <li>
-            <img class="project2" src="projects/W-02-1m.jpg">
-            <img class="project2" src="projects/W-02-2m.jpg">
-            <img class="project2" src="projects/W-02-3m.jpg">
-            <img class="project2" src="projects/W-02-6m.png">
-            <img class="project2" src="projects/W-02-5m.jpg">
-            <p>Renowacja mieszkania w Warszawie</p>
-        </li>
-        <li>
-            <img class="project3" src="projects/A-01-1m.jpg">
-            <img class="project3" src="projects/A-01-2o.jpg">
-            <p>Zespół domów atrialnych</p>
-        </li>
-    </ul></main>
+    <header>
+        <a href="index.html"><img class=logo src="images/logo-kk-12pt.svg" alt="Kuba Krysiak Autorska Pracownia Projektowa"></a>
+    </header>
+    <main>
+        <ul class="gallery-container">
+            <li>
+                <img class="project1" src="projects/W-01-4.gif">
+                <img class="project1" src="projects/W-01-1m.jpg">
+                <img class="project1" src="projects/W-01-2m.jpg">
+                <img class="project1" src="projects/W-01-3m.jpg">
+                <img class="project1" src="projects/W-01-5m.jpg">
+                <img class="project1" src="projects/W-01-6m.jpg">
+                <p>Aranżacja mieszkania we Wrocławiu</p>
+            </li>
+            <li>
+                <img class="project2" src="projects/W-02-1m.jpg">
+                <img class="project2" src="projects/W-02-2m.jpg">
+                <img class="project2" src="projects/W-02-3m.jpg">
+                <img class="project2" src="projects/W-02-6m.png">
+                <img class="project2" src="projects/W-02-5m.jpg">
+                <p>Renowacja mieszkania w Warszawie</p>
+            </li>
+            <li>
+                <img class="project3" src="projects/A-01-1m.jpg">
+                <img class="project3" src="projects/A-01-2o.jpg">
+                <p>Zespół domów atrialnych</p>
+            </li>
+            <li>
+                <img class="project4" src="projects/R-01-2o.jpg">
+                <p>Nowe Centrum Bałut</p>
+            </li>
+            <li>
+                <img class="project5" src="projects/A-02-1o.jpg">
+                <img class="project5" src="projects/A-02-2o.jpg">
+                <p>Toaleta publiczna</p>
+            </li>
+        </ul>
+    </main>
     <nav><a href="menu.html">Menu</a></nav>
 
 
@@ -43,11 +56,13 @@
     var slideIndex = {
         'project1': 1,
         'project2': 1,
-        'project3': 1
+        'project3': 1,
+        'project4': 1,
+        'project5': 1
     };
 
     // Add event listeners for each project
-    document.querySelectorAll('.project1, .project2, .project3').forEach(function (project) {
+    document.querySelectorAll('.project1, .project2, .project3, .project4, .project5').forEach(function (project) {
         project.addEventListener('click', function () {
             var projectClass = project.classList[0];
             plusDivs(1, projectClass);
@@ -77,7 +92,9 @@
     window.onload = function () {
         showDivs(1, 'project1'),
         showDivs(2, 'project2'),
-        showDivs(3, 'project3');
+        showDivs(3, 'project3'),
+        showDivs(4, 'project4'),
+        showDivs(5, 'project5');
     };
 
 </script>

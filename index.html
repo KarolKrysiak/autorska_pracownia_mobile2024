@@ -10,8 +10,40 @@
     <meta name="copyright" content="Kuba Krysiak">
 </head>
 <body>
-    <header><a href="index.html"><img class="logo" src="images/logo-kk-12pt.svg" alt="Kuba Krysiak Autorska Pracownia Projektowa"></a></header>
-    <figure><img src="projects/W-02-1m.jpg" alt=""></figure>
-    <nav><a href="menu.html">Menu</a></nav>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo-kk-12pt.svg" alt="Kuba Krysiak Autorska Pracownia Projektowa"></a>
+    </header>
+    <figure id="random-image">
+        <!-- <img src="projects/W-02-1m.jpg" alt=""> -->
+    </figure>
+    <nav>
+        <a href="menu.html">Menu</a>
+    </nav>
+    <script>
+        window.onload = function() {
+            var images = [
+                "projects/W-01-1m.jpg",
+                "projects/W-01-2m.jpg",
+                "projects/W-01-4am.jpg",
+                "projects/W-01-5m.jpg",
+                "projects/W-01-6m.jpg",
+                "projects/W-02-1m.jpg",
+                "projects/W-02-3m.jpg",
+                "projects/A-01-1m.jpg",
+                "projects/A-02-1o.jpg"
+            ];
+
+            var randomIndex = Math.floor(Math.random() * images.length);
+            var randomImage = images[randomIndex];
+
+            var figure = document.getElementById('random-image');
+            figure.innerHTML = ''; // Wyczyszczenie elementu figure
+
+            var imgElement = document.createElement('img');
+            imgElement.src = randomImage;
+            imgElement.alt = '';
+            figure.appendChild(imgElement);
+        };
+    </script>    
 </body>
 </html>

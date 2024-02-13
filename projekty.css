@@ -7,16 +7,37 @@ header {
     top: var(--margin);
 }
 
-li img {
-    height: calc(100vw - 2 * var(--margin));
-    width: 100vw;
-    object-fit: contain;
-    object-position: left;
-    padding: calc(2 * var(--margin)) 0 calc(4 * var(--margin)) 0;
+/* NOWE */
+
+main {
+    /* display: grid; */
+    margin-top: calc(10vw - var(--gap-size));
+    margin-bottom: 10vw;
 }
 
-li:nth-of-type(2) img {
-    /* object-position: right; */
+main ul {
+    display: grid;
+    gap: 20vw;
+    
+}
+
+main ul li {
+    display: grid;
+    grid-template-rows: calc(100vw - 2 * var(--margin));
+    gap: var(--margin);
+
+    align-items: center;
+    
+}
+
+/* END NOWE */
+
+li img {
+    /* height: calc(100vw - 2 * var(--margin)); */
+    /* width: 100vw; */
+    object-fit: contain;
+    /* object-position: left; */
+    /* padding: calc(2 * var(--margin)) 0 calc(4 * var(--margin)) 0; */
 }
 
 li p {

@@ -46,7 +46,7 @@ body {
     padding: var(--margin);
     display: grid;
     grid-template-rows: auto 1fr auto;
-    row-gap: var(--margin);
+    row-gap: var(--gap-size);
 }
 
 .logo {
